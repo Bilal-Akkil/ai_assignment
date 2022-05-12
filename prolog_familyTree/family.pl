@@ -24,7 +24,7 @@ mother(ray, tony).
 mother(karen, susan).
 mother(karen, ray).
 
-parent(X,Y):- father(X,A);mother(X,A).
+parent(X,Y):- father(X,Y);mother(X,Y).
 
 sibling(X,Y):- father(A,X),father(A,Y);mother(A,X),mother(A,Y).
 
